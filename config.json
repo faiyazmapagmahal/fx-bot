@@ -1,0 +1,41 @@
+{
+  "antiNuke": {
+    "enabled": true,
+    "punishment": "ban",
+    "logChannelId": null,
+    "thresholds": {
+      "channelDelete": { "limit": 3, "windowSeconds": 15 },
+      "channelCreate": { "limit": 5, "windowSeconds": 15 },
+      "roleDelete": { "limit": 3, "windowSeconds": 15 },
+      "roleCreate": { "limit": 5, "windowSeconds": 15 },
+      "memberBan": { "limit": 4, "windowSeconds": 15 },
+      "memberKick": { "limit": 5, "windowSeconds": 15 },
+      "webhookCreate": { "limit": 3, "windowSeconds": 20 },
+      "dangerousRoleGrant": { "limit": 2, "windowSeconds": 20 },
+      "botAdd": { "limit": 1, "windowSeconds": 10 }
+    }
+  },
+  "whitelistedUserIds": [],
+  "whitelistedRoleIds": [],
+  "autoRoleId": null,
+  "automod": {
+    "antilink": { "enabled": false, "allowedDomains": [], "exemptChannelIds": [] },
+    "antimention": { "enabled": false, "threshold": 5, "exemptChannelIds": [] },
+    "antinsfw": { "enabled": false, "threshold": 0.85, "exemptChannelIds": [] },
+    "antispam": { "enabled": false, "messageLimit": 5, "windowSeconds": 5, "exemptChannelIds": [] },
+    "antiraid": { "enabled": false, "joinLimit": 5, "windowSeconds": 10, "lockdownMinutes": 10 }
+  },
+  "socialWatch": {
+    "youtube": [],
+    "instagram": [],
+    "tiktok": []
+  },
+  "welcome": {
+    "enabled": false,
+    "channelId": null,
+    "message": "Welcome {user} to **{server}**! You're member #{memberCount}.",
+    "color": "#5865F2",
+    "thumbnailUrl": null,
+    "imageUrl": null
+  }
+}
